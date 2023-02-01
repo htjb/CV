@@ -12,7 +12,7 @@ jobs:
         with:
           latex_main_file: CV.tex
       
-      - name: GIT commit and push docs
+      - name: GIT commit and push PDF
         env: 
           CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
           CI_COMMIT_AUTHOR: Continuous Integration
