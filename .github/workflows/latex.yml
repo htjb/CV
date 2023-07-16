@@ -16,12 +16,12 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: CV.pdf
+          path: CV
           
       - name: 'Unzip project'
         uses: montudor/action-zip@v1.0.0
         with:
-         args: unzip PDF
+         args: unzip CV
       
       - name: GIT commit and push PDF
         env: 
