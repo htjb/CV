@@ -11,6 +11,12 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: CV.tex
+        
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: CV.pdf
       
       - name: GIT commit and push PDF
         env: 
