@@ -21,7 +21,7 @@ jobs:
       - name: 'Unzip project'
         uses: montudor/action-zip@v1.0.0
         with:
-         args: unzip CV
+         args: unzip PDF
       
       - name: GIT commit and push PDF
         env: 
