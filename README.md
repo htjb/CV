@@ -1,3 +1,3 @@
-# CV
+# CV - Harry Bevins
 
-You can download my CV [here](https://github.com/htjb/CV/archive/refs/tags/Latest-CV.zip).
+You can download my CV from the latest release [here](https://github.com/htjb/CV/releases/download/Current/CV.pdf).
