@@ -11,25 +11,25 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: CV.tex
-        
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
-        with:
-          name: PDF
-          path: CV.pdf
           
-      - name: 'Unzip project'
-        uses: montudor/action-zip@v1.0.0
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: $
         with:
-         args: unzip PDF
-      
-      - name: GIT commit and push PDF
-        env: 
-          CI_COMMIT_MESSAGE: Continuous Integration Build Artifacts
-          CI_COMMIT_AUTHOR: Continuous Integration
-        run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "username@users.noreply.github.com"
-          git add CV.pdf
-          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push
+          tag_name: $
+          release_name: Release $
+          draft: false
+          prerelease: false
+
+      - name: Upload Release Asset
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: $
+        with:
+          upload_url: $ 
+          asset_path: ./CV.pdf
+          asset_name: CV.pdf
+          asset_content_type: pdf
