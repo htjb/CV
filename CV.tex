@@ -11,6 +11,8 @@
 \usepackage{cleveref}
 \usepackage[font=footnotesize]{caption}
 \usepackage[para]{footmisc}
+\usepackage{fontawesome} % for icons
+\usepackage{titlesec} % for custom section titles
 
 \usepackage{array, xcolor}
 \definecolor{lightgray}{gray}{0.8}
@@ -23,29 +25,24 @@
 
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
-\crefformat{figure}{Fig.~#2#1#3}
-\crefformat{equation}{equation~#2#1#3}
-%\crefformat{section}{section~#2#1#3}
-\crefformat{table}{Tab.~#2#1#3}
-\crefformat{appendix}{appendix~#2#1#3}
-\crefmultiformat{figure}{Figs.~#2#1#3}{~and~#2#1#3}%
-    {,~#2#1#3}{,~#2#1#3}
-\crefrangeformat{figure}{Figs.~(#3#1#4--#5#2#6)}
+\titleformat{\section}{\Large\bfseries}{\thesection}{}{}[{\titlerule[0.5pt]}]
+\titleformat{\subsection}{\normalsize\bfseries}{\thesection}{}{}
 
 \begin{document}
 
 \small
 
 \begin{center}
-\huge
-\textbf{Harry T. J. Bevins, PhD}
+\Large
+\textbf{Harry T. J. Bevins, PhD}\\
+\large
+Kavli Junior Fellow, University of Cambridge
 \end{center}
 
 \begin{minipage}[ht]{0.6\linewidth}
-	\textbf{Primary Email}: htjb2@cam.ac.uk \\
-	\textbf{Secondary Email}: harrytjbevins@yahoo.co.uk \\
-	\textbf{Github:} \url{www.github.com/htjb}\\
-	\textbf{Website:} \url{harrybevins.co.uk}
+	\faEnvelope~~\textbf{Email}: htjb2@cam.ac.uk / harrytjbevins@yahoo.co.uk\\
+	\faGithub~~\textbf{Github:} \url{www.github.com/htjb}\\
+	\faGlobe~~\textbf{Website:} \url{harrybevins.co.uk}
 \end{minipage}
 \begin{minipage}[ht]{0.3\linewidth}
 	\begin{flushright}
@@ -57,39 +54,164 @@
 	\end{flushright}
 \end{minipage}
 
+\section*{Summary}
+
+Machine learning and inference expert working at the forefront of cosmological data analysis and 21cm Cosmology:
+\begin{itemize}
+    \item PhD begun in 2019
+    \item 24 international conference talks, including 2 invited contributions and one talk at the European AI for Fundamental Physics Conference.
+    \item 11 first author papers and 5 contributing author papers, including two publications in Nature Astronomy
+    \item Supervision of 3 PhD students, 1 Masters student and 1 summer student since October 2023
+    \item Supervision of undergraduate Relativity and computing courses
+    
+\end{itemize}
+
+\textit{Machine Learning, Bayesian Inference, Simulation Based Inference, 21cm Cosmology, tension quantification, parameter estimation, signal emulation}
+
+
 \section*{Employment}
 \begin{tabular}{L!{\vrule}R}
     October 2023 - & \textbf{Post-Doctoral Research Associate}, St Edmunds College, University of Cambridge. \\
     September 2023 - & \textbf{Kavli Junior Research Fellowship}, Kavli Institute for Cosmology and Cavendish Astrophysics, University of Cambridge. \\
-    April - September 2023 & \textbf{Post Doctoral Research Assistant}, Cavendish Astrophysics, University of Cambridge. Development of calibration techniques for 21-cm Cosmology experiments. Supervised by Dr Eloy de Lera Acedo.\\
+    April - September 2023 & \textbf{Post Doctoral Research Assistant}, Cavendish Astrophysics, University of Cambridge. Development of calibration techniques for 21-cm Cosmology experiments. Reporting to Prof. Eloy de Lera Acedo.\\
     June-August 2018 & \textbf{Summer Research Project:} Investigating estimates of the Cosmic Radio Background. Supervised by Prof. Anna Scaife and Dr Justin Bray. University of Manchester. \\
 \end{tabular}
 
 \section*{Education}
 \begin{tabular}{L!{\vrule}R}
-	October 2019 - September 2023 & \textbf{PhD in Physics}, Cavendish Astrophysics, University of Cambridge. Development and application of novel data analysis techniques for 21-cm Cosmology experiments. Supervised by Dr Eloy de Lera Acedo, Dr Will Handley and Dr Anastasia Fialkov. \\
-	2015 - 2019 & \textbf{M.Phys. Physics with Astrophysics, $\mathbf{1^{st}}$ Class}, University of Manchester. Dissertation involved producing an updated estimate of the Cosmic Radio Background from observations and theory. Performed with I.C. Ni\c{t}u and supervised by Prof. Anna Scaife and Dr Justin Bray. \\
+	October 2019 - September 2023 & \textbf{PhD in Physics}, Cavendish Astrophysics, University of Cambridge. \href{https://github.com/htjb/Thesis}{\textit{A Machine Learning-enhanced Toolbox for Bayesian 21-cm Data Analysis and Constraints on the Astrophysics of the Early Universe}} Supervised by Prof. Eloy de Lera Acedo, Dr Will Handley and Prof. Anastasia Fialkov. \\
+	2015 - 2019 & \textbf{M.Phys. Physics with Astrophysics, $\mathbf{1^{st}}$ Class}, University of Manchester. \href{https://www.sciencedirect.com/science/article/pii/S0927650520301043?via\%3Dihub}{\textit{An updated estimate of the cosmic radio background and implications for ultra-high-energy photon propagation}}. Performed with I.C. Ni\c{t}u and supervised by Prof. Anna Scaife and Dr Justin Bray. \\
 	2008 - 2015 & Churchdown School Academy, Gloucestershire. \\ &\textbf{A-Levels:} 3 A grades, \textbf{AS-levels:} 2 A grades, \textbf{GCSE:} 7 A$^*$ grades, 3 A grades and 1 B. \\ & Highest GCSE and A-Level grades in year group.
 \end{tabular}
 
-\noindent{\Large\textbf{Publications}} \hfill \textbf{Citations: 239, h-index: 9, as of June 2024}
+
+\section*{Lecturing}
+
+\begin{tabular}{L!{\vrule}R}
+    March 2024 & Data Driven Radio Astronomy in the SKA era (2 Lectures), Mphil Data Intensive Science Minor Module 2024, University of Cambridge. Lecturing on \href{https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/Lecture-15.pdf}{Signal Emulation} and \href{https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/Lecture-16.pdf}{Simulation Based Inference} for Astrophysics and Cosmology.
+\end{tabular}
+
+
+\section*{Student Supervision}
+
+\subsection*{PhD Students}
+
+\begin{tabular}{L!{\vrule}R}
+    January 2024 - & Co-supervision of Aleksandra Dragovic with Eloy de Lera Acedo and Dominic Anstey. Data analysis for 21-cm Cosmology. \\
+    January 2024 - & Co-supervision of Saswata Dasgupta with Anastasia Fialkov, Dominic Anstey and Eloy de Lera Acedo, University of Cambridge. Working on Calibration methods for global 21-cm experiments. \\
+	October 2023 - & Co-supervision of Sam Leeny with Eloy de Lera Acedo and Will Handley. Working on data analysis techniques for 21-cm Cosmology, including  radiometer calibration with machine learning. \\
+\end{tabular}
+
+\subsection*{Masters Students}
+
+\begin{tabular}{L!{\vrule}R}
+    October 2023 - May 2024 & Co-Supervision of Nora Gavrea with Anastasia Fialkov. Working on theoretical modelling of the Dark Ages 21-cm signal. Now PhD student in School of Mathematics, University of Leeds. \\
+\end{tabular}
+
+\subsection*{Summer Students}
+
+\begin{tabular}{L!{\vrule}R}
+    July 2024 - September 2024 & Co-Supervision of Charlotte Priestley  with Will Handley. Estimation of Mutual Information with Neural Ratio Estimation and applications to high dimensional density estimation. \\
+\end{tabular}
+
+\section*{Small Group Teaching}
+
+\begin{tabular}{>{\raggedleft}p{0.2\textwidth}!{\vrule}p{0.76\textwidth}}
+	October 2021 - April 2022 & \textbf{Demonstration of Part IA Scientific Computing} for 32 hours, University of Cambridge.\\
+	October - December 2020 & \textbf{Part II Relativity Supervision} of 16 students,  University of Cambridge. \\
+	July - August 2020 & \textbf{Formative Marking of Part II Relativity Papers} for 56 students, University of Cambridge. \\
+	October - December 2019 & \textbf{Part II Relativity Supervision} of 6 students, University of Cambridge.
+\end{tabular}
+
+\section*{Grants and Awards}
+
+\begin{tabular}{l!{\vrule}r}
+    DiRAC Seedcorn (100K CPU hrs = £1000) & Constraining the Stochasticity of Star Formation with Simulation Based Inference \\
+    DiRAC Seedcorn (100k CPU and 1000 GPU hrs =£1550) & Temperature dependent normalizing flows and their relationship to Nested Sampling \\
+    Kavli Junior Fellowship 2023 (Accepted) & Three year independent research post with £10,000 per year research budget. \\
+    Texas Center for Cosmology and Antiparticle Physics Fellowship 2023 (Declined) & Two year postdoctoral fellowship at University of Texas Austin with Prof. Julian Munoz. \\
+    Trottier Space Institute Fellowship 2023 (Declined) & Two year postdoctoral fellowship at McGill University with Prof. Cynthia Chiang and Prof. John Sievers. \\
+    Fitzwilliam Society Trust Research Fund 2022 & Financial support to help attend and present at the 5th Global 21-cm Workshop. \\
+	Fitzwilliam College Student Opportunities Award 2022 & Financial support awarded to help attend and present at 41st MaxEnt22 Conference. \\
+	Fitzwilliam College Senior Scholarship 2022 & Financial support awarded in recognition of excellent academic achievements. \\
+	Fitzwilliam College Senior Scholarship 2020 & Financial support awarded in recognition of resilience, hard work and achievements in PhD studies during 2020.
+\end{tabular}
+
+
+\section*{Peer Review}
+Two papers for the Journal of Open Source Software, one paper for Advances in Space Research, one for Journal of Cosmology and Astroparticle Physics, one for The Astronomical Journal, one for the Open Journal of Astrophysics and one for Monthly Notices of the Royal Astronomical Society (see \href{https://www.webofscience.com/wos/author/record/3920858}{Web of Science}).
+
+\section*{Institutional Responsibilities}
+
+\begin{tabular}{L!{\vrule}R}
+    October 2023 - & Co-organiser of Cambridge-wide bi-monthly 21-cm meeting discussion group \\
+    December 2023 - & Co-organiser of Cambridge-wide bi-monthly Astrostatistics Discussion group \\
+\end{tabular}
+
+\section*{Conference Organisation}
+
+\begin{tabular}{l!{\vrule}r}
+    \href{https://sites.google.com/view/global-21-cm-workshop}{\textbf{7th Global 21-cm Workshop}} October 2024 & Member of the Science Organising Committee, Raman Research Institute, Bengaluru, India. \\
+    \href{https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/science-21-cm-hydrogen-line}{\textbf{Science with the 21-cm line, Kavli Science Focus Meeting}} February 2024 & Member of Organising Committee and session chair, University of Cambrdige. \\
+    \href{https://www.ursi-gass2023.jp}{\textbf{URSI GASS 2023}} September 2023 & Member of Organising Committee and session co-chair for the session "21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Re-ionization", Sapporo, Japan. \\
+    \href{https://global21cmworkshop.org/2023-ifpu/}{\textbf{6th Global 21-cm Workshop}} September 2023 & Member of the Science Organising Committee, Trieste \\
+    \href{https://nam2023.org}{\textbf{National Astronomical Meeting}} July 2023 & Member of Science Organising Committee and session chair for the session “21-cm Cosmology: Current Status, Challenges and Prospects”, Cardiff University. \\
+	\href{http://cavgradcon.soc.srcf.net/index.html}{\textbf{Cavendish Graduate Conference}} November 2021 & Member of Organising Committee, Cavendish Astrophysics, University of Cambridge.\\
+	\href{https://sites.google.com/view/third21cmglobalworkshop/home?authuser=0}{\textbf{3\textsuperscript{rd} Global 21-cm Workshop}} October 2020 & Member of Local Organising Committee, Cavendish Astrophysics, University of Cambridge.	
+\end{tabular}
+
+
+\section*{Computational Skills}
+
+\begin{tabular}{L!{\vrule}R}
+	Programming and & Experienced: Python, Tensorflow \\
+    Software & Intermediate: Pytorch, JAX \\
+    OS & Experienced: Linux, HPC, MacOS \\
+	Markup & Experienced: LATEX \\
+	Languages & Intermediate: HTML, CSS, reStructuredText, Markdown
+\end{tabular}
+
+\section*{Software}
+
+\begin{tabular}{L!{\vrule}R}
+	\href{https://github.com/htjb/margarine}{margarine} & Main author and maintainer: Posterior Sampling and Marginal Bayesian Statistics using Normalizing Flows and Tensorflow. \\
+	\href{https://github.com/htjb/globalemu}{globalemu} & Main author and maintainer: Robust and fast emulation of the Global 21-cm signal using Tensorflow. \\
+	\href{https://github.com/htjb/maxsmooth}{maxsmooth} & Main author and maintainer: Fast Derivative Constrained Function fitting.\\
+     \href{https://github.com/htjb/beta-flows}{betaflows} & Main author and maintainer: Temperature dependnet Normalizing Flows using Tensorflow. \\
+	\href{https://github.com/williamjameshandley/anesthetic}{anesthetic} & Contributor: Added feature to plot shaded confidence regions under 1D posterior probability plots.\\
+	\href{https://github.com/htjb/arXivSearcher}{arXivSearcher} & Main author and maintainer: Terminal based arXiv search tool.
+\end{tabular}
+
+\section*{In the Media}
+
+\begin{tabular}{L!{\vrule}R}
+	November 2022 & \href{https://www.cam.ac.uk/research/news/non-detection-of-key-signal-allows-astronomers-to-determine-what-the-first-galaxies-were-and-werent}{Non-detection of key signal allows astronomers to determine what the first galaxies were – and weren’t – like}. Press release for SARAS3 astrophysical constraints from the University of Cambridge. See also an article in \href{https://www.independent.co.uk/space/galaxies-beginning-cosmic-dawn-signal-b2234570.html?amp}{The Independent} and \href{https://nature.altmetric.com/details/139089769/news}{Altmetric} for a summary of other articles. \\
+	July 2022 & \href{https://www.cam.ac.uk/research/news/astronomers-develop-novel-way-to-see-the-first-stars-through-the-fog-of-the-early-universe}{Astronomers develop novel way to ‘see’ first stars through fog of early Universe}. Press release for the REACH mission paper lead by Eloy de Lera Acedo. See \href{https://nature.altmetric.com/details/132932581/news}{Altmetrics} for a summary of other articles.
+\end{tabular}
+
+\pagebreak
+
+\noindent{\Large\textbf{Publications}} \hfill \textbf{Citations: 265, h-index: 9, as of July 2024}
 
 \hfill \href{http://arxiv.org/a/bevins_h_1}{arxiv.org/a/bevins\_h\_1}
 
 \hfill \href{https://ui.adsabs.harvard.edu/search/p_=0&q=author\%3A\%22Bevins\%2C\%20H.\%20T.\%20J.\%22&sort=date\%20desc\%2C\%20bibcode\%20desc}{ADS Abstracts}
+\par\noindent\rule{\textwidth}{0.5pt}
+
+%\titlerule[0.5pt]
 
 \subsection*{First Author}
 
 \begin{tabular}{L!{\vrule}R}
     July 2024 & \textbf{H. T. J. Bevins}, W. J. Handley, T. Gessey-Jones, \href{https://arxiv.org/abs/2407.15478}{\textit{Calibrating Bayesian Tension Statistics using Neural Ratio Estimation}}, arXiv:2407.15478. \\
-    January 2024 & \textbf{H. T. J. Bevins}, S. Heimersheim, I. Abril-Cabezas, A. Fialkov, E. de Lera Acedo, W. J. Handley, S. Singh, R. Barkana. \href{https://academic.oup.com/mnras/article/527/1/813/7326010?utm_source=advanceaccess&utm_campaign=mnras&utm_medium=email}{\textit{Joint analysis constraints on the physics of the first galaxies with low frequency radio astronomy data.}}, Monthly Notices of the Royal Astronomical Society, Volume 527, Issue 1, arXiv:2301.03298. \\
-    October 2023 & \textbf{H. T. J. Bevins}, W. J. Handley, P. Lemos, P. Sims, E. de Lera Acedo, A. Fialkov, J. Alsing. \href{https://arxiv.org/abs/2205.12841}{\textit{Marginal post processing of bayesian inference products with normalizing flows and kernel density estimators}}, MNRAS, arXiv:2205.12841. \\
+    January 2024 & \textbf{H. T. J. Bevins}, S. Heimersheim, I. Abril-Cabezas, A. Fialkov, E. de Lera Acedo, W. J. Handley, S. Singh, R. Barkana. \href{https://academic.oup.com/mnras/article/527/1/813/7326010?utm_source=advanceaccess&utm_campaign=mnras&utm_medium=email}{\textit{Joint analysis constraints on the physics of the first galaxies with low frequency radio astronomy data.}}, MNRAS, Volume 527, Issue 1, arXiv:2301.03298. \\
+    October 2023 & \textbf{H. T. J. Bevins}, W. J. Handley, P. Lemos, P. Sims, E. de Lera Acedo, A. Fialkov, J. Alsing. \href{https://arxiv.org/abs/2205.12841}{\textit{Marginal post processing of bayesian inference products with normalizing flows and kernel density estimators}}, MNRAS, Volume 526, Issue 3, arXiv:2205.12841. \\
     May 2023 & \textbf{H. T. J. Bevins}, W. J. Handley. \href{https://arxiv.org/abs/2305.02930}{\textit{Piecewise Normalizing Flows}}, arXiv:2305.02930. \\
     November 2022 & \textbf{H. T. J. Bevins}, A. Fialkov, E. de Lera Acedo, W. J. Handley, S. Singh, R. Subrahmanyan, R. Barkana. \href{https://www.nature.com/articles/s41550-022-01825-6}{\textit{Astrophysical Constraints from the SARAS3 non-detection of the Cosmic Dawn Sky-Averaged 21-cm Signal.}} \textbf{Nature Astronomy}, https://doi.org/10.1038/s41550-022-01825-6.\\
 	October 2022 & \textbf{H. T. J. Bevins}, W. J. Handley, P. Lemos, P. Sims, E. de Lera Acedo, A. Failkov. \href{https://www.mdpi.com/2673-9984/5/1/1#abstract}{\textit{Marginal Bayesian Statistics Using Masked Autoregressive Flows and Kernel Density Estimators with Examples in Cosmology.}} Physical Sciences Forum, Volume 5, Issue 1, proceedings to MaxEnt22, arXiv:2207.11457. \\
-	April 2022 & \textbf{H. T. J. Bevins}, E. de Lera Acedo, A. Fialkov, W. J. Handley, S. Singh, R. Subrahmanyan, R. Barkana. \href{https://doi.org/10.1093/mnras/stac1158}{\textit{A comprehensive Bayesian re-analysis of the SARAS2 data from the Epoch of Reionization}}, Monthly Notices of the Royal Astronomical Society, Volume 508, Issue 2, Pages 2923-2936, arXiv:2201.11531\\
-	September 2021 & \textbf{H. T. J. Bevins}, W. J. Handley, A. Fialkov, E. de Lera Acedo and K. Javid. \href{https://doi.org/10.1093/mnras/stab2737}{\textit{\textsc{globalemu}: A novel and robust approach for emulating the sky-averaged 21-cm signal from the cosmic dawn and epoch of reionisation}}, Monthly Notices of the Royal Astronomical Society, Volume 513, Issue 3, Pages 4507-4526, arXiv:2104.04336 \\
-	April 2021 & \textbf{H. T. J. Bevins}, W. J. Handley, A. Fialkov, E. de Lera Acedo, L. J. Greenhill, D. C. Price, \href{https://academic.oup.com/mnras/article/502/3/4405/6105349?guestAccessKey=769d7461-cc0b-4d83-9cdf-bc351056d911}{\textit{\textsc{maxsmooth}: rapid maximally smooth function fitting with applications it Global 21-cm cosmology}}, Monthly Notices of the Royal Astronomical Society, Volume 502, Issue 3, Pages 4405–4425, 
+	April 2022 & \textbf{H. T. J. Bevins}, E. de Lera Acedo, A. Fialkov, W. J. Handley, S. Singh, R. Subrahmanyan, R. Barkana. \href{https://doi.org/10.1093/mnras/stac1158}{\textit{A comprehensive Bayesian re-analysis of the SARAS2 data from the Epoch of Reionization}}, MNRAS, Volume 508, Issue 2, Pages 2923-2936, arXiv:2201.11531\\
+	September 2021 & \textbf{H. T. J. Bevins}, W. J. Handley, A. Fialkov, E. de Lera Acedo and K. Javid. \href{https://doi.org/10.1093/mnras/stab2737}{\textit{\textsc{globalemu}: A novel and robust approach for emulating the sky-averaged 21-cm signal from the cosmic dawn and epoch of reionisation}}, MNRAS, Volume 513, Issue 3, Pages 4507-4526, arXiv:2104.04336 \\
+	April 2021 & \textbf{H. T. J. Bevins}, W. J. Handley, A. Fialkov, E. de Lera Acedo, L. J. Greenhill, D. C. Price, \href{https://academic.oup.com/mnras/article/502/3/4405/6105349?guestAccessKey=769d7461-cc0b-4d83-9cdf-bc351056d911}{\textit{\textsc{maxsmooth}: rapid maximally smooth function fitting with applications it Global 21-cm cosmology}}, MNRAS, Volume 502, Issue 3, Pages 4405–4425, 
     arXiv:2007.14970\\
 	November 2020 & I.C. Ni\c{t}u, \textbf{H.T.J. Bevins}, J.D. Bray, A.M.M. Scaife, \href{https://www.sciencedirect.com/science/article/pii/S0927650520301043?via\%3Dihub}{\textit{An updated estimate of the cosmic radio background and implications for ultra-high-energy photon propagation}}, Astroparticle Physics, 126, 102532, arXiv:2004.13596, \textit{Shared First Authorship}. \\
 	October 2020 & \textbf{H. T. J. Bevins}, \href{https://joss.theoj.org/papers/10.21105/joss.02596}{\textit{maxsmooth: Derivative Constrained Function Fitting.}} Journal of Open Source Software, 5(54), 2596 \\
@@ -98,8 +220,8 @@
 \subsection*{Contributing Author}
 
 \begin{tabular}{L!{\vrule}R}
-    December 2023 & T. Gessey-Jones, S. Pochinda, \textbf{H. T. J. Bevins}, A. Fialkov, W. J. Handley, E. de Lera Acedo, S. Singh, R. Barkana, \href{https://arxiv.org/abs/2312.08828}{\textit{On the Constraints on Superconducting Cosmic Strings from 21-cm Cosmology}}, arXiv:2312.08828 \\
-    December 2023 & S. Pochinda, T. Gessey-Jones, \textbf{H. T. J. Bevins}, A. Fialkov, S. Heimersheim, I. Abril-Cabezas, E. de Lera Acedo, S. Singh, S. Sikder, R. Barkana. \href{https://arxiv.org/abs/2312.08095}{\textit{Constraining the properties of Population III galaxies with multi-wavelength observations}}, arXiv:2312.08095. \\
+    June 2024 & S. Pochinda, T. Gessey-Jones, \textbf{H. T. J. Bevins}, A. Fialkov, S. Heimersheim, I. Abril-Cabezas, E. de Lera Acedo, S. Singh, S. Sikder, R. Barkana. \href{https://academic.oup.com/mnras/article/531/1/1113/7663583}{\textit{Constraining the properties of Population III galaxies with multi-wavelength observations}}, MNRAS, Volume 531, Issue 1, arXiv:2312.08095. \\
+    March 2024 & T. Gessey-Jones, S. Pochinda, \textbf{H. T. J. Bevins}, A. Fialkov, W. J. Handley, E. de Lera Acedo, S. Singh, R. Barkana, \href{https://academic.oup.com/mnras/article/529/1/519/7609695}{\textit{On the Constraints on Superconducting Cosmic Strings from 21-cm Cosmology}}, MNRAS, Volume 259, Issue 1, arXiv:2312.08828 \\
     July 2023 & The REACH Collaboration. \href{https://arxiv.org/abs/2307.00099}{\textit{Receiver design for the REACH global 21-cm signal experiment}}, arXiv:2307.00099. \\
 	July 2022 & The REACH Collaboration. \href{https://www.nature.com/articles/s41550-022-01709-9?utm_campaign=related_content&utm_source=ASTRO&utm_medium=communities}{\textit{The REACH radiometer for detecting the 21-cm hydrogen signal from redshift $z \approx 7.5 -28$.}} \textbf{Nature Astronomy}, 6, 984–998 (2022). https://doi.org/10.1038/s41550-022-01709-9. \textit{Section lead on Detection of Unknown Systematics}. \\
 	February 2022 & The REACH Collaboration. \href{https://ui.adsabs.harvard.edu/abs/2021arXiv210910098C/abstract}{\textit{Radio antenna design for sky-averaged 21 cm cosmology experiments: the REACH case}}, Journal of Astronomical Instrumentation, Volume 11, Issue 1, arXiv:2109.10098. \\
@@ -109,6 +231,7 @@
 
 \subsection*{Invited Talks and Panel Discussions}
 \begin{tabular}{L!{\vrule}R}
+August 2024 & \href{https://indico.cern.ch/event/1293041/contributions/5970077/}{\textit{Calibrating Tension Statistics with Neural Ratio Estimation}}, XVIth Quark Confinement and the Hadron Spectrum, University of Adelaide, Cairns, Australia. \\
 December 2023 & \href{https://github.com/htjb/Talks/raw/master/Talks/cambridge-lmu/Cambridge-LMU.pdf}{\textit{Forward Modelling in 21-cm Cosmology}}, \href{https://indico.physik.uni-muenchen.de/event/394/}{Cambridge - LMU Forward Modelling Cosmology Meeting}, Max-Planck-Institute for Extraterrestrial Physics, Munich, Germany.\\
 December 2023 & Panellist on `Forward simulating the Universe - Opportunities and Challenges?' panel, \href{https://indico.physik.uni-muenchen.de/event/394/}{Cambridge - LMU Forward Modelling Cosmology Meeting}, Max-Planck-Institute for Extraterrestrial Physics, Munich, Germany. \\
 September 2023 & Panellist on `Instrumentation \& Methods' panel, \href{https://global21cmworkshop.org/2023-ifpu/}{6$^{th}$ Global 21-cm Workshop}, Fundamental Physics of the Universe (IFPU), Trieste, Italy \\
@@ -134,60 +257,12 @@ September 2023 & Panellist on `Instrumentation \& Methods' panel, \href{https://
 	April 2022 & \href{https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/observational-and-theoretical-21-cm-cosmology}{\textit{Constraining the Astrophysics of the Early Universe using the SARAS Instrumentation}}, Observational and Theoretical 21-cm Cosmology, Kavli Meeting, University of Cambridge \\
 	March 2022 & \textit{A comprehensive Bayesian re-analysis of the SARAS2 data from the Epoch of Reionization}, SAZERAC 21-cm Gulp (Online) \\
 	January 2022 & \href{https://www.youtube.com/watch?v=BFwia93NuAc&list=PLp95u5tgS_YUkFaLATBQpLajJzO5ljN5u&index=5}{\textit{globalemu: A novel and robust approach to emulating the global 21-cm signal with neural networks}}, SAZERAC-SIP:Learning the high-redshift universe (Online) \\
- \end{tabular}
- 
- \begin{tabular}{L!{\vrule}R}
 	December 2021 & \href{https://www.youtube.com/watch?v=93KCp7rHcGA&list=PLZL7YmXBBHPDCyNfJcWwP78GgacY_Og4E&index=23}{\textit{A Bayesian re-analysis of the sky-averaged 21-cm experimental data from SARAS2}}, , Lightening talk, Science at Low Frequencies VIII (Online), University of Amsterdam \\
 	October 2021 & \href{https://www.youtube.com/watch?v=862NuVyF33k&list=PLF7c7ri2hrnGlwbn4JLc0PWbncSeARdTP&index=4}{\textit{globalemu: novel and robust global 21-cm signal emulation}}, 4th Global 21-cm Workshop (Online), University of Colorado \\
 	December 2020 & \href{https://www.youtube.com/watch?v=Yw6_IInwTNE}{\textit{maxsmooth and its applications in science at low frequencies}}, Lightening talk, Science at Low Frequencies VII (Online), University of Amsterdam \\
 	October 2020 & \textit{maxsmooth and its applications to 21-cm cosmology}, 3rd Global 21-cm Workshop (Online), University of Cambridge \\
 \end{tabular}
 
-\section*{Peer Review}
-Two papers for the Journal of Open Source Software, one paper for Advances in Space Research, one for Journal of Cosmology and Astroparticle Physics, one for the Astronomical Journal, one for the Open Journal of Astrophysics and one for Monthly Notices of the Royal Astronomical Society (see \href{https://www.webofscience.com/wos/author/record/3920858}{Web of Science}).
-
-\section*{Institutional Responsibilities}
-
-\begin{tabular}{L!{\vrule}R}
-    October 2023 - & Co-organiser of Cambridge-wide monthly 21-cm meeting discussion group \\
-    December 2023 - & Co-organiser of Cambridge-wide bi-monthly Astrostatistics Discussion group \\
-\end{tabular}
-
-\section*{Lecturing}
-
-\begin{tabular}{L!{\vrule}R}
-    March 2024 & Data Driven Radio Astronomy in the SKA era (2 Lectures), Mphil Data Intensive Science Minor Module 2024, University of Cambridge. Lecturing on \href{https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/Lecture-15.pdf}{Signal Emulation} and \href{https://github.com/htjb/Talks/raw/master/Lectures/MPhil_Data_Intensive_Science_Lectures_2024/Lecture-16.pdf}{Simulation Based Inference} for Astrophysics and Cosmology.
-\end{tabular}
-
-
-\section*{Student Supervision}
-
-\begin{tabular}{L!{\vrule}R}
-    January 2024 - & Co-supervision of Aleksandra Dragovic (PhD student) with Eloy de Lera Acedo and Dominic Anstey. Data analysis for 21-cm Cosmology. \\
-    January 2024 - & Co-supervision of Saswata Dasgupta (PhD student) with Anastasia Fialkov, Dominic Anstey, Daniel Molnar and Eloy de Lera Acedo, University of Cambridge. Working on Calibration methods for global 21-cm experiments. \\
-	October 2023 - & Co-supervision of Sam Leeny (PhD student) with Eloy de Lera Acedo and Will Handley. Working on data analysis techniques for 21-cm Cosmology. \\
-	October 2023 - May 2024 & Co-Supervision of Nora Gavrea (Masters student) with Anastasia Fialkov. Working on theoretical modelling of the Dark Ages 21-cm signal. \\
-\end{tabular}
-
-\section*{Grants and Awards}
-
-\begin{tabular}{l!{\vrule}r}
-    DiRAC Seedcorn (100K CPU hrs = £1000) & Constraining the Stochasticity of Star Formation with Simulation Based Inference \\
-    DiRAC Seedcorn (100k CPU and 1000 GPU hrs =£1550) & Seedcorn grant to investigate temperature dependent normalizing flows and their relationship to Nested Sampling \\
-    Fitzwilliam Society Trust Research Fund 2022 & Financial support to help attend and present at the 5th Global 21-cm Workshop. \\
-	Fitzwilliam College Student Opportunities Award 2022 & Financial support awarded to help attend and present at 41st MaxEnt22 Conference. \\
-	Fitzwilliam College Senior Scholarship 2022 & Financial support awarded in recognition of excellent academic achievements. \\
-	Fitzwilliam College Senior Scholarship 2020 & Financial support awarded in recognition of resilience, hard work and achievements in PhD studies during 2020.
-\end{tabular}
-
-\section*{Small Group Teaching}
-
-\begin{tabular}{>{\raggedleft}p{0.2\textwidth}!{\vrule}p{0.76\textwidth}}
-	October 2021 - April 2022 & \textbf{Demonstration of Part IA Scientific Computing} for 32 hours, University of Cambridge.\\
-	October - December 2020 & \textbf{Part II Relativity Supervision} of 16 students,  University of Cambridge. \\
-	July - August 2020 & \textbf{Formative Marking of Part II Relativity Papers} for 56 students, University of Cambridge. \\
-	October - December 2019 & \textbf{Part II Relativity Supervision} of 6 students, University of Cambridge.
-\end{tabular}
 
 \section*{Posters Presentations}
 
@@ -197,49 +272,13 @@ Two papers for the Journal of Open Source Software, one paper for Advances in Sp
 	November 2019 & \href{https://github.com/htjb/Talks/blob/master/Posters/Cav_Graduate_Conf_REACH_Nov_2019/REACH_poster.pdf}{\textit{REACH: Radio Experiment for the Analysis of Cosmic Hydrogen}}, Cavendish Graduate Conference, University of Cambridge
 \end{tabular}
 
-\section*{In the Media}
-
-\begin{tabular}{L!{\vrule}R}
-	November 2022 & \href{https://www.cam.ac.uk/research/news/non-detection-of-key-signal-allows-astronomers-to-determine-what-the-first-galaxies-were-and-werent}{Non-detection of key signal allows astronomers to determine what the first galaxies were – and weren’t – like}. Press release for SARAS3 astrophysical constraints from the University of Cambridge. See also an article in \href{https://www.independent.co.uk/space/galaxies-beginning-cosmic-dawn-signal-b2234570.html?amp}{The Independent} and \href{https://nature.altmetric.com/details/139089769/news}{Altmetric} for a summary of other articles. \\
-	July 2022 & \href{https://www.cam.ac.uk/research/news/astronomers-develop-novel-way-to-see-the-first-stars-through-the-fog-of-the-early-universe}{Astronomers develop novel way to ‘see’ first stars through fog of early Universe}. Press release for the REACH mission paper lead by Eloy de Lera Acedo. See \href{https://nature.altmetric.com/details/132932581/news}{Altmetrics} for a summary of other articles.
-\end{tabular}
-
-\section*{Computational Skills}
-
-\begin{tabular}{L!{\vrule}R}
-	Programming & Experienced: Python \\
-	Markup & Experienced: LATEX \\
-	Languages & Intermediate: HTML, CSS, reStructuredText, Markdown
-\end{tabular}
-
-\section*{Software}
-
-\begin{tabular}{L!{\vrule}R}
-	\href{https://github.com/htjb/margarine}{margarine} & Main author and maintainer: Posterior Sampling and Marginal Bayesian Statistics. \\
-	\href{https://github.com/htjb/globalemu}{globalemu} & Main author and maintainer: Robust and fast emulation of the Global 21-cm signal.\\
-	\href{https://github.com/htjb/maxsmooth}{maxsmooth} & Main author and maintainer: Fast Derivative Constrained Function fitting.\\
-	\href{https://github.com/williamjameshandley/anesthetic}{anesthetic} & Contributor: Added feature to plot shaded confidence regions under 1D posterior probability plots.\\
-	\href{https://github.com/htjb/arXivSearcher}{arXivSearcher} & Main author and maintainer: Terminal based arXiv search tool.
-\end{tabular}
-
-\section*{Conference Organisation}
-
-\begin{tabular}{l!{\vrule}r}
-    \href{https://sites.google.com/view/global-21-cm-workshop}{\textbf{7th Global 21-cm Workshop}} October 2024 & Member of the Science Organising Committee, Raman Research Institute, Bengaluru, India. \\
-    \href{https://www.kicc.cam.ac.uk/events/kavli-science-themed-meetings/science-21-cm-hydrogen-line}{\textbf{Science with the 21-cm line, Kavli Science Focus Meeting}} February 2024 & Member of Organising Committee and session chair, University of Cambrdige. \\
-    \href{https://www.ursi-gass2023.jp}{\textbf{URSI GASS 2023}} September 2023 & Member of Organising Committee and session co-chair for the session "21-cm Cosmology: Dark Ages, Cosmic Dawn and the Epoch of Re-ionization", Sapporo, Japan. \\
-    \href{https://global21cmworkshop.org/2023-ifpu/}{\textbf{6th Global 21-cm Workshop}} September 2023 & Member of the Science Organising Committee, Trieste \\
-    \href{https://nam2023.org}{\textbf{National Astronomical Meeting}} July 2023 & Member of Science Organising Committee and session chair for the session “21-cm Cosmology: Current Status, Challenges and Prospects”, Cardiff University. \\
-	\href{http://cavgradcon.soc.srcf.net/index.html}{\textbf{Cavendish Graduate Conference}} November 2021 & Member of Organising Committee, Cavendish Astrophysics, University of Cambridge.\\
-	\href{https://sites.google.com/view/third21cmglobalworkshop/home?authuser=0}{\textbf{3\textsuperscript{rd} Global 21-cm Workshop}} October 2020 & Member of Local Organising Committee, Cavendish Astrophysics, University of Cambridge.	
-\end{tabular}
 %\section*{References}
 
-%\textbf{Dr Eloy de Lera Acedo}, PhD Supervisor, Head of Cavendish Radio Cosmology and Principle Investigator, Cavendish Astrophysics, University of Cambridge. \textbf{Email:}ed330@cam.ac.uk\\
+%\textbf{Prof. Eloy de Lera Acedo}, PhD Supervisor, Head of Cavendish Radio Cosmology and Principle Investigator, Cavendish Astrophysics, University of Cambridge. \textbf{Email:}ed330@cam.ac.uk\\
 %\\
 %\textbf{Dr Will Handley}, PhD Supervisor, Royal Society University Research Fellow, Cavendish Astrophysics, University of Cambridge. \textbf{Email:} wh260@cam.ac.uk\\
 %\\
-%\textbf{Dr Anastasia Fialkov}, PhD Supervisor, Royal Society University Research Fellow, Institute of Astronomy, University of Cambridge. \textbf{Email:} anastasia.fialkov@gmail.com \\
+%\textbf{Prof. Anastasia Fialkov}, PhD Supervisor, Royal Society University Research Fellow, Institute of Astronomy, University of Cambridge. \textbf{Email:} anastasia.fialkov@gmail.com \\
 
 
 \end{document}
