@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[backend=bibtex, sorting=ydnt, maxnames=99]{biblatex}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[colorlinks=True]{hyperref}
+\hypersetup{urlcolor=blue}
+\usepackage[font=footnotesize]{caption}
+\usepackage[para]{footmisc}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{enumitem}
+
+\usepackage{array, xcolor}
+
+\newcommand{\note}[1]{\todo[inline]{#1}}
+
+\addbibresource{ref-me.bib}
+
+\usepackage{titlesec}
+
+\titleformat{\section}  % which section command to format
+  {\fontsize{14}{16}\bfseries} % format for whole line
+  {\thesection} % how to show number
+  {1em} % space between number and text
+  {\color{blue}} % formatting for just the text
+  
+\titleformat{\subsection}  % which section command to format
+  {\fontsize{10}{12}\sffamily} % format for whole line
+  {\S\thesubsection} % how to show number
+  {2em} % space between number and text
+  {\color{blue}} % formatting for just the text
+
+\begin{document}
+%TC:ignore
+%\newgeometry{margin=1.5cm}
+%\include{CV.tex}
+%\restoregeometry
+%TC:endignore
+%\pagebreak
+
+\begin{center}
+\huge
+\textbf{{\color{blue}Publication List}}\\
+\large{Harry T. J. Bevins PhD}\\
+\large{Kavli Fellow, University of Cambridge}
+\end{center}
+
+\noindent \textbf{Citations: 364, h-index: 11, as of April 2025}
+
+\noindent \href{http://arxiv.org/a/bevins_h_1}{arxiv.org/a/bevins\_h\_1}
+
+\noindent \href{https://ui.adsabs.harvard.edu/search/p_=0&q=author\%3A\%22Bevins\%2C\%20H.\%20T.\%20J.\%22&sort=date\%20desc\%2C\%20bibcode\%20desc}{ADS Abstracts}
+
+\noindent \href{https://scholar.google.com/citations?user=03_3YwQAAAAJ&hl=en}{Google Scholar}
+
+
+\nocite{*}
+\printbibliography[title={All Publicaitons},heading=bibintoc]
+
+\end{document}
